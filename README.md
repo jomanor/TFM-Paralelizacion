@@ -1,3 +1,10 @@
-# TFM-Paralelizacion
+# TFM-Paralelización
 
-En este repositorio se encuentra el contenido bibliográfico de mi TFM con el fin de poder compartirlo con los tutores, Diego e Isaac.
+**Paralelización de Modelos de Machine Learning para Optimizar Rendimiento y Escalabilidad**
+
+Por José María Manzano Ortega
+
+## Contenido
+
+**src/** - Scripts de los experimentos  
+**data/** - Resultados experimentales

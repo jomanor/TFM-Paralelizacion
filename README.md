@@ -7,5 +7,5 @@ Por José María Manzano Ortega
 ## Contenido
 
 **src/** - Scripts de los experimentos  
-**data/** - Resultados experimentales
+**data/** - Resultados experimentales  
 **Material_Adicional.pdf** - Gráficas de las métricas por experimento

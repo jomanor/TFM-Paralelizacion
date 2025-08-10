@@ -8,3 +8,4 @@ Por José María Manzano Ortega
 
 **src/** - Scripts de los experimentos  
 **data/** - Resultados experimentales
+**Material_Adicional.pdf** - Gráficas de las métricas por experimento

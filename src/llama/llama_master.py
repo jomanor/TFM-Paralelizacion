@@ -204,9 +204,9 @@ if __name__ == "__main__":
         'multi_news': [0.7]
     }
 
-    BATCH_SIZES = [16, 32, 64]
+    BATCH = [16, 32, 64]
     
-    NUM_ITERATIONS = [128, 512, 1024]
+    ITERACIONES = [128, 512, 1024]
     
     CONFIGURACIONES_MODELO = {
         'small': {'dim': 256, 'n_layers': 2, 'n_heads': 16},
@@ -220,8 +220,8 @@ if __name__ == "__main__":
     for dataset_name, dataset_info in DATASETS.items():
         fractions = DATASET_FRACTIONS.get(dataset_name, [1.0])
         combinaciones_parametros_entrenamiento = [
-            {'dataset_fraction': frac, 'batch_size': bs, 'num_iterations': ni}
-            for frac, bs, ni in itertools.product(fractions, BATCH_SIZES, NUM_ITERATIONS)
+            {'fraccion datos': frac, 'batch': bs, 'iteraciones': ni}
+            for frac, bs, ni in itertools.product(fractions, BATCH, ITERACIONES)
         ]
 
         contador_experimento = 0

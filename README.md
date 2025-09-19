@@ -42,10 +42,13 @@ El trabajo implementa y evalúa dos paradigmas de paralelización:
 - `cpu/` - Resultados de experimentos en CPU
 - `gpu/` - Resultados de experimentos en GPU
 
-**requirements_pytorch.txt** - Dependencias para experimentos con LLaMA-2 
-**requirements_xgboost.txt** - Dependencias para experimentos con XGBoost 
-**Material_Adicional.pdf** - Gráficas de las métricas por experimento 
-**TFM_Manzano_Ortega_José María.pdf** - Documento completo del Trabajo de Fin de Máster 
+**requirements_pytorch.txt** - Dependencias para experimentos con LLaMA-2
+
+**requirements_xgboost.txt** - Dependencias para experimentos con XGBoost
+
+**Material_Adicional.pdf** - Gráficas de las métricas por experimento
+
+**TFM_Manzano_Ortega_José María.pdf** - Documento completo del Trabajo de Fin de Máster
 
 ---
 
@@ -90,6 +93,9 @@ The work implements and evaluates two parallelization paradigms:
 - `gpu/` - GPU experiment results
 
 **requirements_pytorch.txt** - Dependencies for LLaMA-2 experiments 
-**requirements_xgboost.txt** - Dependencies for XGBoost experiments 
-**Material_Adicional.pdf** - Experimental metrics charts 
+
+**requirements_xgboost.txt** - Dependencies for XGBoost experiments
+
+**Material_Adicional.pdf** - Experimental metrics charts
+
 **TFM_Manzano_Ortega_José María.pdf** - Complete Master's Thesis document

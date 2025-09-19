@@ -4,7 +4,7 @@
 
 Por José María Manzano Ortega
 
-## Resumen (Español)
+## Resumen
 
 Este Trabajo de Fin de Máster investiga las técnicas de paralelización aplicadas a modelos de Machine Learning para optimizar su rendimiento y escalabilidad. El estudio se centra en dos arquitecturas fundamentales: XGBoost (Gradient Boosting Trees) y modelos LLaMA-2 basados en la arquitectura Transformer.
 
@@ -25,28 +25,7 @@ El trabajo implementa y evalúa dos paradigmas de paralelización:
 - **FSDP (Fully Sharded Data Parallel)**: Demuestra eficiencia en la gestión de memoria para modelos grandes
 - Las técnicas de paralelización son esenciales para manejar modelos de gran escala en la era de la IA moderna
 
-## Summary (English)
-
-This Master's Thesis investigates parallelization techniques applied to Machine Learning models to optimize their performance and scalability. The study focuses on two fundamental architectures: XGBoost (Gradient Boosting Trees) and LLaMA-2 models based on the Transformer architecture.
-
-### Main Objectives
-- Analyze parallelization strategies: data and tensor parallelism
-- Evaluate performance across different hardware architectures (CPU and GPU)
-- Compare speed-up, size-up, and scale-up metrics
-- Investigate communication limitations in distributed training
-
-### Methodology
-The work implements and evaluates two parallelization paradigms:
-1. **Data Parallelism**: Distribution of data batches across multiple devices
-2. **Tensor Parallelism**: Partitioning of matrix operations across devices
-
-### Key Results
-- **XGBoost**: Shows better performance on GPU compared to CPU, but significant limitations in multi-GPU scalability due to communication overhead
-- **LLaMA-2 Models**: Tensor parallelism outperforms data parallelism in Transformer architectures
-- **FSDP (Fully Sharded Data Parallel)**: Demonstrates efficiency in memory management for large models
-- Parallelization techniques are essential for handling large-scale models in the modern AI era
-
-## Contenido
+### Contenido
 
 **src/llama/** - Scripts de experimentos con modelos LLaMA-2
 - `llama_master.py` - Script maestro para coordinar experimentos LLaMA
@@ -69,3 +48,50 @@ The work implements and evaluates two parallelization paradigms:
 **requirements_xgboost.txt** - Dependencias para experimentos con XGBoost
 **Material_Adicional.pdf** - Gráficas de las métricas por experimento
 **TFM_Manzano_Ortega_José María.pdf** - Documento completo del Trabajo de Fin de Máster
+
+---
+
+## Summary
+
+This Master's Thesis investigates parallelization techniques applied to Machine Learning models to optimize their performance and scalability. The study focuses on two fundamental architectures: XGBoost (Gradient Boosting Trees) and LLaMA-2 models based on the Transformer architecture.
+
+### Main Objectives
+- Analyze parallelization strategies: data and tensor parallelism
+- Evaluate performance across different hardware architectures (CPU and GPU)
+- Compare speed-up, size-up, and scale-up metrics
+- Investigate communication limitations in distributed training
+
+### Methodology
+The work implements and evaluates two parallelization paradigms:
+1. **Data Parallelism**: Distribution of data batches across multiple devices
+2. **Tensor Parallelism**: Partitioning of matrix operations across devices
+
+### Key Results
+- **XGBoost**: Shows better performance on GPU compared to CPU, but significant limitations in multi-GPU scalability due to communication overhead
+- **LLaMA-2 Models**: Tensor parallelism outperforms data parallelism in Transformer architectures
+- **FSDP (Fully Sharded Data Parallel)**: Demonstrates efficiency in memory management for large models
+- Parallelization techniques are essential for handling large-scale models in the modern AI era
+
+### Content
+
+**src/llama/** - LLaMA-2 model experiment scripts
+- `llama_master.py` - Master script to coordinate LLaMA experiments
+- `llama_dp.py` - Data parallelism implementation for LLaMA
+- `llama_tp.py` - Tensor parallelism implementation for LLaMA
+- `llama_1gpu.py` - Single-GPU reference implementation
+
+**src/xgboost/** - XGBoost experiment scripts
+- `cpu_xgboost.py` - XGBoost CPU implementation
+- `gpu_xgboost.py` - XGBoost GPU implementation
+
+**data/llama/** - LLaMA-2 model experimental results
+- `pytorch.csv`, `pytorch2.csv`, `pytorch3.csv` - LLaMA performance metrics
+
+**data/xgboost/** - XGBoost experimental results
+- `cpu/` - CPU experiment results
+- `gpu/` - GPU experiment results
+
+**requirements_pytorch.txt** - Dependencies for LLaMA-2 experiments
+**requirements_xgboost.txt** - Dependencies for XGBoost experiments
+**Material_Adicional.pdf** - Experimental metrics charts
+**TFM_Manzano_Ortega_José María.pdf** - Complete Master's Thesis document

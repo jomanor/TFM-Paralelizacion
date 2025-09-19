@@ -19,9 +19,8 @@ El trabajo implementa y evalúa dos paradigmas de paralelización:
 
 ### Resultados Clave
 - **XGBoost**: Muestra mejor rendimiento en GPU comparado con CPU, pero limitaciones significativas en escalabilidad multi-GPU debido al overhead de comunicación
-- **Modelos LLaMA-2**: El paralelismo tensor supera al paralelismo de datos en arquitecturas Transformer
+- **Modelos LLaMA-2**: El paralelismo de tensor supera al paralelismo de datos en arquitecturas Transformer en cuanto a escalabilidad del tiempo de entrenamiento
 - **FSDP (Fully Sharded Data Parallel)**: Demuestra eficiencia en la gestión de memoria para modelos grandes
-- Las técnicas de paralelización son esenciales para manejar modelos de gran escala en la era de la IA moderna
 
 ### Contenido
 
@@ -69,9 +68,8 @@ The work implements and evaluates two parallelization paradigms:
 
 ### Key Results
 - **XGBoost**: Shows better performance on GPU compared to CPU, but significant limitations in multi-GPU scalability due to communication overhead
-- **LLaMA-2 Models**: Tensor parallelism outperforms data parallelism in Transformer architectures
+- **LLaMA-2 Models**: Tensor parallelism outperforms data parallelism for Transformer architectures in terms of training speed
 - **FSDP (Fully Sharded Data Parallel)**: Demonstrates efficiency in memory management for large models
-- Parallelization techniques are essential for handling large-scale models in the modern AI era
 
 ### Content
 

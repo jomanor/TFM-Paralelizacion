@@ -1,12 +1,10 @@
-# TFM-Paralelización
+# ML Model Parallelization
 
-**Paralelización de Modelos de Machine Learning para Optimizar Rendimiento y Escalabilidad**
-
-Por José María Manzano Ortega
+José María Manzano Ortega
 
 ## Resumen
 
-Este Trabajo de Fin de Máster investiga las técnicas de paralelización aplicadas a modelos de Machine Learning para optimizar su rendimiento y escalabilidad. El estudio se centra en dos arquitecturas fundamentales: XGBoost (Gradient Boosting Trees) y modelos LLaMA-2 basados en la arquitectura Transformer.
+Este Trabajo de Fin de Máster investiga las técnicas de paralelización aplicadas a modelos de Machine Learning para optimizar su rendimiento y escalabilidad. El estudio llevado a cabo se centra en dos arquitecturas fundamentales: XGBoost y modelos LLaMA-2 basados en la arquitectura Transformer.
 
 ### Objetivos Principales
 - Analizar las estrategias de paralelización: paralelismo de datos y tensor

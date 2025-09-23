@@ -29,6 +29,7 @@ El trabajo implementa y evalúa dos paradigmas de paralelización:
 - `llama_dp.py` - Implementación de paralelismo de datos para LLaMA
 - `llama_tp.py` - Implementación de paralelismo tensor para LLaMA
 - `llama_1gpu.py` - Implementación de referencia en una sola GPU
+- `llama2_model.py` - Modelo base utilizado para los experimentos
 
 **src/xgboost/** - Scripts de experimentos con XGBoost
 - `cpu_xgboost.py` - Implementación de XGBoost en CPU
@@ -78,6 +79,7 @@ The work implements and evaluates two parallelization paradigms:
 - `llama_dp.py` - Data parallelism implementation for LLaMA
 - `llama_tp.py` - Tensor parallelism implementation for LLaMA
 - `llama_1gpu.py` - Single-GPU reference implementation
+- `llama2_model.py` - Base model used for experimentation
 
 **src/xgboost/** - XGBoost experiment scripts
 - `cpu_xgboost.py` - XGBoost CPU implementation
